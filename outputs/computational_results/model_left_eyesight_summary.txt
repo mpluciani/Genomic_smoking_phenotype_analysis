@@ -1,0 +1,24 @@
+
+Call:
+lm(formula = eyesight.left. ~ smoking * gender + height.cm. + 
+    weight.kg., data = mydata2)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.0687 -0.2085 -0.0256  0.1717  9.0382 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)     -0.0915619  0.0534339  -1.714   0.0866 .  
+smoking         -0.0407429  0.0167790  -2.428   0.0152 *  
+genderM          0.0341836  0.0069885   4.891    1e-06 ***
+height.cm.       0.0064822  0.0003712  17.464   <2e-16 ***
+weight.kg.       0.0002683  0.0002182   1.230   0.2188    
+smoking:genderM  0.0354249  0.0175476   2.019   0.0435 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4811 on 55686 degrees of freedom
+Multiple R-squared:  0.02351,	Adjusted R-squared:  0.02343 
+F-statistic: 268.2 on 5 and 55686 DF,  p-value: < 2.2e-16
+

@@ -1,0 +1,5 @@
+"analysis","variable_a","variable_b","statistic","parameter","p_value"
+"dataset1","sex","smoker",0.20512506705444,1,0.650615458639502
+"dataset1","sex","drinker",0.000982167782075944,1,0.974998744613223
+"dataset1","smoker","drinker",0.270053679075029,1,0.603295766195435
+"dataset2","gender","smoking",14502.5908888631,1,0

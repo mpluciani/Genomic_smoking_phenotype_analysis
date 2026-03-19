@@ -1,0 +1,31 @@
+
+Call:
+lm(formula = disease_score ~ height + mass + smoker + sex + drinker + 
+    metabolite_A + metabolite_B + metabolite_C + metabolite_D + 
+    metabolite_E, data = mydata1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.7594 -0.8609  0.0518  0.9048  5.4846 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   2.028e+01  2.668e+00   7.602 6.76e-14 ***
+height        7.364e-04  1.134e-02   0.065    0.948    
+mass         -3.607e-02  2.231e-02  -1.617    0.106    
+smoker        2.244e+00  9.742e-02  23.035  < 2e-16 ***
+sex          -8.944e-02  9.985e-02  -0.896    0.371    
+drinker      -1.395e-02  9.991e-02  -0.140    0.889    
+metabolite_A -2.668e+01  1.892e+00 -14.098  < 2e-16 ***
+metabolite_B -1.652e-01  9.365e-01  -0.176    0.860    
+metabolite_C  1.242e+01  5.453e-01  22.773  < 2e-16 ***
+metabolite_D  6.202e-02  9.360e-01   0.066    0.947    
+metabolite_E -4.952e-03  4.675e-01  -0.011    0.992    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.41 on 987 degrees of freedom
+  (2 observations deleted due to missingness)
+Multiple R-squared:  0.9123,	Adjusted R-squared:  0.9114 
+F-statistic:  1026 on 10 and 987 DF,  p-value: < 2.2e-16
+

@@ -41,6 +41,7 @@ The script:
 - computes smoking-by-gender group means for key phenotypes
 - fits a linear model for left-eye eyesight as a phenotype proxy
 - fits a logistic model for smoking status using clinical predictors
+- generates outcome figures and saves them to `outputs/figure_outcomes/`
 
 ## Output Files and Biological Meaning
 
@@ -54,6 +55,33 @@ The script:
   Multivariable associations between clinical biomarkers and smoking status.
 - `outputs/genomic_and_smoking_dataset_sizes.csv`
   Sample-size trace for both integrated sources.
+- `outputs/figure_outcomes/01_dataset_sizes_barplot.png`
+  Comparison of row counts across integrated datasets.
+- `outputs/figure_outcomes/02_genomic_association_summary_barplot.png`
+  Mean association score by genomic annotation pattern.
+- `outputs/figure_outcomes/03_smoking_gender_clinical_means_panels.png`
+  Group means for eyesight and anthropometric traits by smoking status and sex.
+- `outputs/figure_outcomes/04_linear_model_coefficients.png`
+  Linear model coefficient estimates with 95% confidence intervals.
+- `outputs/figure_outcomes/05_logistic_model_odds_ratios.png`
+  Logistic model odds ratios with 95% confidence intervals.
+
+## Outcome Figures
+
+### Dataset Size Comparison
+![Dataset size comparison](outputs/figure_outcomes/01_dataset_sizes_barplot.png)
+
+### Genomic Association Summary
+![Genomic association summary](outputs/figure_outcomes/02_genomic_association_summary_barplot.png)
+
+### Smoking and Gender Clinical Means
+![Smoking and gender clinical means](outputs/figure_outcomes/03_smoking_gender_clinical_means_panels.png)
+
+### Linear Model Coefficients
+![Linear model coefficients](outputs/figure_outcomes/04_linear_model_coefficients.png)
+
+### Logistic Model Odds Ratios
+![Logistic model odds ratios](outputs/figure_outcomes/05_logistic_model_odds_ratios.png)
 
 ## Project Structure
 
@@ -61,6 +89,7 @@ The script:
 - `scripts/01_genomic_smoking_phenotype_analysis.R` main reproducible analysis
 - `scripts/legacy/` preserved historical script
 - `outputs/` generated summaries and model reports
+- `outputs/figure_outcomes/` generated figure outcomes from all analysis endpoints
 
 ## Notes
 

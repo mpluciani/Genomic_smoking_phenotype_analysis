@@ -1,0 +1,28 @@
+
+Call:
+glm(formula = smoking ~ age + height_cm + weight_kg + waist_cm + 
+    cholesterol + triglyceride + hemoglobin + gender, family = binomial(), 
+    data = smoking)
+
+Coefficients:
+               Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  -7.9344466  0.3971637 -19.978  < 2e-16 ***
+age          -0.0026981  0.0009898  -2.726  0.00641 ** 
+height_cm     0.0230614  0.0021599  10.677  < 2e-16 ***
+weight_kg    -0.0175171  0.0020757  -8.439  < 2e-16 ***
+waist_cm      0.0049310  0.0024885   1.982  0.04753 *  
+cholesterol  -0.0022415  0.0003058  -7.331 2.28e-13 ***
+triglyceride  0.0055316  0.0001627  34.000  < 2e-16 ***
+hemoglobin    0.1347727  0.0104452  12.903  < 2e-16 ***
+genderM       2.7721096  0.0480277  57.719  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 73235  on 55691  degrees of freedom
+Residual deviance: 54176  on 55683  degrees of freedom
+AIC: 54194
+
+Number of Fisher Scoring iterations: 5
+
